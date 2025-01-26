@@ -300,7 +300,6 @@ body{
     .explore__card{
         width: 300px;
     }
-
 }
 
 @media screen and (max-width: 1700px) {
@@ -319,16 +318,23 @@ body{
 }
 
 @media screen and (max-width: 1550px) {
+    .navbar__menu{
+        gap: 130px;
+    }
+
     .explore{
-        height: 110vh;
-        background: red;
+        height: 125vh;
     }
 
     .explore__cards{
         align-items: center;
         gap: 20px;
         flex-direction: column;
-        height: 200px;
+        height: 1000px;
+    }
+
+    .explore--nor{
+        background-position: 0px 500px;
     }
 
     .explore__card{
@@ -338,7 +344,7 @@ body{
     }
 
     .explore__card h3{
-        margin-top: 1%;
+        margin-top: 250px;
         margin-bottom: 1%;
         position: relative;
         font-size: 22px;
@@ -350,5 +356,15 @@ body{
         font-size: 13px;
         z-index: 1;
     }
+}
 
+@media screen and (max-width: 800px) {
+    .navbar__menu{
+        gap: 80px;
+    }
+
+    .explore__content p,
+    .journal__content p{
+        width: 500px;
+    }
 }
