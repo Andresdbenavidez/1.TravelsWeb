@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #1f2937;
+}
+
+img{
+    object-fit: cover;
+}
+
+body{
+
+}
+
+.navbar{
+    padding: 13px 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    color: white;
+}
+
+.navbar__menu a{
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: 0;
+}
+
+.navbar__menu > i{
+    font-size: 33px;
+}
+
+.hero{
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/17801008/pexels-photo-17801008/free-photo-of-paisaje-naturaleza-puesta-de-sol-punto-de-referencia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero__content{
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero__content h1{
+    font-size: 100px;
+}
+
+.hero__content p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.hero__content i{
+    font-size: 60px;
+}
+
+.explore{
+    height: 80vh;
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+.explore__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 50px;
+}
+
+.explore__content h2,
+.journal__content h2{
+    padding: 10px 0 20px;
+    font-size: 40px;
+    font-weight: 0px;
+}
+
+.explore__content p,
+.journal__content p{
+    text-align: center;
+    width: 28%;
+}
+
+.explore__cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 400px 0px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.explore__card{
+    position: relative;
+    text-align: center;
+    height: 100%;
+    width: 350px;
+}
+
+.explore__card h3{
+    font-style: italic;
+    margin-top: 90%;
+    margin-bottom: 5%;
+    position: relative;
+    font-size: 22px;
+    z-index: 1;
+}
+
+.explore__card p{
+    position: relative;
+    font-size: 13px;
+    z-index: 1;
+}
+
+.explore__card::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 0; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 0;
+}
+
+.explore--nor{
+    background-image: url('https://images.pexels.com/photos/29749460/pexels-photo-29749460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.explore--usa{
+    background-image: url('https://images.pexels.com/photos/1731660/pexels-photo-1731660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.explore--aus{
+    background-image: url('https://images.pexels.com/photos/20078576/pexels-photo-20078576/free-photo-of-paisaje-bosque-montana-rio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.explore__more,
+.journal__more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.explore__more a,
+.journal__more a{
+    color: cornflowerblue;
+    height: 100px; 
+}
+
+.journal{
+    height: 80vh;
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+.journal__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.journal__cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0 400px 0px;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 70px;
+}
+
+.journal__card{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    align-items: center;
+}
+
+.journal__card img{
+    top: 0;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 25px;
+}
+
+.journal__card--betit {
+    font-size: 17px;
+    font-weight: 1000px;
+    margin-bottom: 5px;
+}
+
+.journal__card h3 {
+    font-size: 20px;
+    font-weight: 800px;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.journal__card p{
+    text-align: center;
+    width: 80%;
+}
+
+.footer{
+    position: relative;
+    min-height: 60vh;
+    height: 60vh;
+    background-image: url('https://images.pexels.com/photos/1542493/pexels-photo-1542493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    grid-template-rows: auto 1fr auto;
+    z-index: 0;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 0; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.85));
+    z-index: 1;
+}
+
+.footer__space{
+    height: 95%;
+}
+
+.footer__content{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: black;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.footer__content p{
+    position: relative;
+    color: white;
+    z-index: 2;
+    margin-top: auto;
+}
+
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer__content a{
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1855px) {
+    .explore__card{
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1700px) {
+    .explore{
+        height: 70vh;
+    }
+
+    .explore__cards{
+        height: 300px;
+    }
+
+    .explore__card{
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 1550px) {
+    .explore{
+        height: 110vh;
+        background: red;
+    }
+
+    .explore__cards{
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .explore__card{
+        background-size: cover;
+        height: 400px;
+        width: 600px;
+    }
+
+    .explore__card h3{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        position: relative;
+        font-size: 22px;
+        z-index: 1;
+    }
+    
+    .explore__card p{
+        position: relative;
+        font-size: 13px;
+        z-index: 1;
+    }
+
+}
