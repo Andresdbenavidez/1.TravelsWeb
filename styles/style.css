@@ -367,4 +367,93 @@ body{
     .journal__content p{
         width: 500px;
     }
+
+    .explore__cards,
+    .journal__cards{
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer__content p:nth-child(2){
+        display: none;
+    }
+
+    .footer__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .navbar__menu{
+        gap: 20px;
+    }
+
+    .hero__content h1{
+        font-size: 65px;
+    }
+
+    .explore{
+        height: 190vh;
+    }
+
+    .explore__content p,
+    .journal__content p{
+        width: 300px;
+    }
+
+    .explore__card{
+        width: 300px;
+    }
+
+    .explore--nor {
+        background-position: 0px 0px;
+    }
+
+    .journal{
+        height: 150vh;
+    }
+
+    .journal__cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .journal__cards{
+        gap: 50px;
+        padding: 0;
+    }
+
+    .journal__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        width: 200px;
+        height: 200vh;
+    }
+
+    .journal__card img{
+        width: 150%;
+        height: 90%;
+    }
+
+    .journal__card h3{
+        margin-bottom: 5px;
+    }
+
+    .journal__card p{
+        width: 130%;
+    }
+
+    .footer__content{
+        text-align: center;
+        gap: 20px;
+    }
 }
